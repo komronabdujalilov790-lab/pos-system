@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RestoPOS — Reservation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="kerak.css" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo">RestoPOS</a>
+      </div>
+      <div class="header-right">
+        <a href="cart.html" class="btn-icon">
+          <span class="material-symbols-rounded">shopping_cart</span>
+          Cart
+        </a>
+      </div>
+    </header>
+
+    <!-- LAYOUT -->
+    <div class="layout">
+
+      <!-- SIDEBAR -->
+      <nav class="sidebar">
+        <a href="index.html" class="nav-item" title="Menu">
+          <span class="material-symbols-rounded">home</span>
+          <small>Menu</small>
+        </a>
+        <a href="cart.html" class="nav-item" title="Cart">
+          <span class="material-symbols-rounded">shopping_cart</span>
+          <small>Cart</small>
+        </a>
+        <a href="checkout.html" class="nav-item" title="Checkout">
+          <span class="material-symbols-rounded">credit_card</span>
+          <small>Pay</small>
+        </a>
+        <a href="reservation.html" class="nav-item active" title="Reservation">
+          <span class="material-symbols-rounded">event_seat</span>
+          <small>Reserve</small>
+        </a>
+        <a href="orders.html" class="nav-item" title="Orders">
+          <span class="material-symbols-rounded">receipt_long</span>
+          <small>Orders</small>
+        </a>
+      </nav>
+
+      <!-- MAIN -->
+      <main class="main-content">
+        <div class="page-header">
+          <h2>
+            <span class="material-symbols-rounded">event_seat</span> Table Reservation
+          </h2>
+        </div>
+
+        <div class="res-container">
+
+          <!-- Table map -->
+          <div class="table-map">
+            <h3>Select a Table</h3>
+            <div class="tables-grid">
+
+              <div class="table-item available">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-01</span>
+                <small>4 seats</small>
+              </div>
+
+              <div class="table-item occupied">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-02</span>
+                <small>Occupied</small>
+              </div>
+
+              <div class="table-item available">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-03</span>
+                <small>6 seats</small>
+              </div>
+
+              <div class="table-item available">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-04</span>
+                <small>2 seats</small>
+              </div>
+
+              <div class="table-item reserved">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-05</span>
+                <small>Reserved</small>
+              </div>
+
+              <div class="table-item available">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-06</span>
+                <small>8 seats</small>
+              </div>
+
+              <div class="table-item available">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-07</span>
+                <small>4 seats</small>
+              </div>
+
+              <div class="table-item occupied">
+                <span class="material-symbols-rounded">chair</span>
+                <span>T-08</span>
+                <small>Occupied</small>
+              </div>
+
+            </div>
+            <div class="legend">
+              <span class="leg available">Available</span>
+              <span class="leg occupied">Occupied</span>
+              <span class="leg reserved">Reserved</span>
+            </div>
+          </div>
+
+          <!-- Booking form -->
+          <div class="res-form section-card">
+            <h3>Booking Details</h3>
+            <label>Guest Name</label>
+            <input type="text" class="input-field" placeholder="Full name" />
+            <label>Phone Number</label>
+            <input type="tel" class="input-field" placeholder="+1 (555) 000-0000" />
+            <label>Date</label>
+            <input type="date" class="input-field" />
+            <label>Time</label>
+            <input type="time" class="input-field" />
+            <label>Number of Guests</label>
+            <input type="number" class="input-field" placeholder="2" min="1" max="20" />
+            <label>Special Requests</label>
+            <textarea class="input-field" rows="3" placeholder="Allergy info, special occasion..."></textarea>
+            <a href="orders.html" class="btn-primary full">
+              <span class="material-symbols-rounded">check_circle</span> Confirm Reservation
+            </a>
+          </div>
+
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
